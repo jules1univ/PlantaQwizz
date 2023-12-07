@@ -24,11 +24,11 @@ app.disable('x-powered-by');
 
 const apiRouter = express.Router();
 app.use('/api', apiRouter);
-app.use('/', express.static(join(__dirname, "..", "../client/dist"), {index: "index.html"}));
+app.use('/', express.static(join(__dirname, "static/"), {index: "index.html"}));
 
 
-apiRouter.post('/login', () => {
-
-});
+apiRouter.get('/login', (req, res) => {
+  res.json({ message: "Hello"})
+}); 
 
 app.listen(5000);

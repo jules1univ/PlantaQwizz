@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run format && tsc && vite build && copy .\\public\\manifest.webmanifest .\\dist\\manifest.webmanifest /Y",
+    "build": "npm run format && tsc && vite build && copy .\\public\\manifest.webmanifest ..\\out\\static\\manifest.webmanifest /Y",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write ./src",

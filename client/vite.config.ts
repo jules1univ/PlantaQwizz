@@ -2,11 +2,13 @@ import { defineConfig, splitVendorChunkPlugin } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import react from "@vitejs/plugin-react-swc";
 import { fileURLToPath, URL } from "node:url";
-
+import { resolve } from "path";
 
 export default defineConfig(async ({ command, mode }) => {
+  console.log(resolve(__dirname, "..", "../out/static/"))
   return {
     build: {
+      outDir: resolve(__dirname, "../out/static/"),
       emptyOutDir: true,
       manifest: true,
 
@@ -20,7 +22,7 @@ export default defineConfig(async ({ command, mode }) => {
       rollupOptions: {
         output: {
           manualChunks: {
-            lodash: ['lodash']
+            lodash: ["lodash"],
           },
           minifyInternalExports: true,
         },
@@ -55,7 +57,7 @@ export default defineConfig(async ({ command, mode }) => {
 
         // "react": "preact/compat",
         // "react-dom/test-utils": "preact/test-utils",
-        // "react-dom": "preact/compat",   
+        // "react-dom": "preact/compat",
         // "react/jsx-runtime": "preact/jsx-runtime"
       },
     },

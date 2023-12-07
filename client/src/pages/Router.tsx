@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from "react";
-import {  } from "@chakra-ui/react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 const Theme = lazy(() => import("@pages/Theme"));
