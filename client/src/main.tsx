@@ -1,14 +1,11 @@
-import { StrictMode, Suspense, lazy } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+import Router from "./pages/Router";
 
 import "./index.scss";
 
-const Router = lazy(() => import("@pages/Router"));
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Suspense>
-      <Router />
-    </Suspense>
-  </StrictMode>,
+    <Router />
+  </StrictMode>
 );

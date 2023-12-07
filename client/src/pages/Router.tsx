@@ -1,15 +1,21 @@
-import { StyledEngineProvider } from "@mui/joy/styles";
-import { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
+import {  } from "@chakra-ui/react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
+const Theme = lazy(() => import("@pages/Theme"));
 const Home = lazy(() => import("@pages/Home"));
 
-const Router = () => {
+const Router: React.FC = () => {
   return (
-    <StyledEngineProvider injectFirst>
-      <Suspense>
-        <Home />
-      </Suspense>
-    </StyledEngineProvider>
+    <Suspense>
+      <Theme>
+        <BrowserRouter>
+          <Routes>
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </Theme>
+    </Suspense>
   );
 };
 

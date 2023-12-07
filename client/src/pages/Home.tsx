@@ -1,12 +1,9 @@
-import Button from "@mui/joy/Button";
-
-import { signal } from "@preact/signals";
-const count = signal<number>(0);
+import { Button } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
-      <Button onClick={() => count.value++}>Click me {count.value}</Button>
+      <Button>Hello</Button>
     </>
   );
 };

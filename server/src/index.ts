@@ -21,11 +21,14 @@ app.use(sanitizer());
 
 app.disable('x-powered-by');
 
+
+const apiRouter = express.Router();
+app.use('/api', apiRouter);
 app.use('/', express.static(join(__dirname, "..", "../client/dist"), {index: "index.html"}));
 
-app.get("/api", (req, res) => {
-  const token = jwt.sign({}, process.env.TOKEN_PRIVATE_KEY as jwt.Secret);
-  res.json({ message: token });
+
+apiRouter.post('/login', () => {
+
 });
 
 app.listen(5000);

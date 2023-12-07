@@ -12,11 +12,10 @@
     "analyse": "npx vite-bundle-visualizer -c vite.config.ts"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/joy": "^5.0.0-beta.17",
-    "@preact/signals": "^1.2.2",
-    "preact": "^10.19.2",
+    "framer-motion": "^10.16.15",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.20.1"
