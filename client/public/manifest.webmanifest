@@ -1,0 +1,27 @@
+{
+  "name": "La Nuit de l'Info",
+  "short_name": "Nuit de l'Info",
+  "description": "",
+
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "orientation": "natural",
+
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+
+  "lang": "fr",
+
+  "handle_links": "preferred",
+  "categories": [],
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "shortcuts": [],
+  "icons": []
+}
