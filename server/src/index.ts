@@ -1,6 +1,5 @@
 import express from "express";
 import helmet from "helmet";
-import jwt from "jsonwebtoken";
 import { rateLimit } from "express-rate-limit";
 import { join } from "path";
 
@@ -23,11 +22,5 @@ app.use(compression());
 app.disable("x-powered-by");
 
 app.use(express.static(join(__dirname, "static/"), { index: "index.html" }));
-
-app.get("/api", (req, res) => {
-  res.json({
-    message: jwt.sign({}, process.env.TOKEN_PRIVATE_KEY as jwt.Secret),
-  });
-});
 
 app.listen(process.env.PORT || 80);

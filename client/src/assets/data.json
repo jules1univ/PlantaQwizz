@@ -1,0 +1,286 @@
+[
+  {
+    "question": "Quelle source d'énergie est la plus respectueuse de l'environnement?",
+    "res": ["Énergie solaire", "Énergie nucléaire", "Charbon", "Gaz naturel"],
+    "points": [1024, 512, 128, 256],
+    "type": "environnement",
+    "info": "L'énergie solaire est la meilleure option avec une note maximale de 1024, car elle est renouvelable et n'émet pas de gaz à effet de serre de manière significative. L'énergie nucléaire est également faible en émissions, mais présente d'autres risques."
+  },
+  {
+    "question": "Quel type de transport a le moins d'impact sur la biodiversité?",
+    "res": ["Vélo", "Voiture électrique", "Avion", "Moto"],
+    "points": [1024, 768, 256, 512],
+    "type": "environnement",
+    "info": "Le vélo a le moins d'impact sur la biodiversité avec une note maximale de 1024, car il ne contribue pas à la destruction des habitats naturels. La voiture électrique a un impact moindre par rapport à l'avion et à la moto."
+  },
+
+  {
+    "question": "Préfères-tu marcher avec tes amis ou être conduit en voiture lorsque tu te déplaces?",
+    "res": ["Marcher", "Voiture", "velo"],
+    "points": [1024, 0, 1024],
+    "type": "Enfant - Transport",
+    "info": "Marcher est un moyen écologique de se déplacer. Les voitures peuvent parfois contribuer à la pollution, mais il peut y avoir des situations où elles sont nécessaires."
+  },
+  {
+    "question": "Lorsque tu choisis des aliments, préfères-tu ceux qui sont cultivés près de chez toi ou ceux qui viennent de loin?",
+    "res": ["Aliments locaux", "Aliments importés"],
+    "points": [1024, 0],
+    "type": "Enfant - Achat",
+    "info": "Les aliments locaux sont souvent plus écologiques car ils nécessitent moins de transport. En choisissant des aliments locaux, tu soutiens également les agriculteurs de ta région."
+  },
+  {
+    "question": "Comment préfères-tu te rafraîchir lorsqu'il fait chaud : en utilisant un ventilateur ou en utilisant la climatisation?",
+    "res": ["Ventilateur", "Climatisation", "rester à l'ombre"],
+    "points": [512, 0, 1024],
+    "type": "Enfant - Action",
+    "info": "Utiliser un ventilateur est une option plus écologique, car la climatisation utilise plus d'énergie. Il est important de rester frais tout en choisissant des moyens respectueux de l'environnement."
+  },
+  {
+    "question": "Quand tu as besoin de quelque chose de nouveau, préfères-tu acheter des objets d'occasion ou des objets tout neufs?",
+    "res": ["Objets d'occasion", "Objets neufs"],
+    "points": [512, 0],
+    "type": "Enfant - Achat",
+    "info": "Acheter des objets d'occasion contribue à réduire la quantité de déchets et prolonge la durée de vie des produits. C'est une manière éco-responsable de consommer."
+  },
+  {
+    "question": "Préfères-tu t'amuser en plein air ou jouer à l'intérieur avec des jouets électroniques?",
+    "res": [
+      "Activités en plein air",
+      "Activités à l'intérieur avec jouets électroniques",
+      "les deux"
+    ],
+    "points": [512, 0, 256],
+    "type": "Enfant - Environement",
+    "info": "Les activités en plein air sont amusantes et bonnes pour la planète. Jouer à l'intérieur avec des jouets électroniques peut parfois utiliser beaucoup d'énergie."
+  },
+  {
+    "question": "utilise tu des lumières LED ou des ampoules traditionnelles dans ta chambre?",
+    "res": ["Lumières LED", "Ampoules traditionnelles", "je ne sais pas"],
+    "points": [1024, 0, 512],
+    "type": "Enfant - Action",
+    "info": "Les lumières LED sont plus économes en énergie et durent plus longtemps que les ampoules traditionnelles, contribuant ainsi à la préservation de l'énergie."
+  },
+  {
+    "question": "Lorsque tu fais du camping, aimerais-tu utiliser des assiettes en plastique jetables ou des assiettes en bambou réutilisables?",
+    "res": [
+      "Assiettes en bambou réutilisables",
+      "Assiettes en plastique jetables"
+    ],
+    "points": [256, 0],
+    "type": "Enfant - Environement",
+    "info": "Les assiettes en bambou réutilisables sont une option plus écologique, car elles réduisent les déchets plastiques souvent associés aux assiettes jetables."
+  },
+  {
+    "question": "Quand tu choisis des vêtements, est-ce que tu préfères ceux faits de matériaux recyclés ou de nouveaux matériaux?",
+    "res": ["Vêtements en matériaux recyclés", "Vêtements neuf"],
+    "points": [1024, 0],
+    "type": "Enfant - Achat",
+    "info": "Les vêtements en matériaux recyclés contribuent à la réduction des déchets textiles et encouragent le recyclage, ce qui est bénéfique pour l'environnement."
+  },
+  {
+    "question": "Lorsque tu as soif, préfères-tu boire de l'eau du robinet ou de l'eau en bouteille en plastique?",
+    "res": ["Eau du robinet", "Eau en bouteille en plastique"],
+    "points": [1024, 0],
+    "type": "Enfant - Action",
+    "info": "Boire de l'eau du robinet est plus écologique, car cela évite la production de bouteilles en plastique et réduit les déchets plastiques."
+  },
+  {
+    "question": "Préfères-tu utiliser des feuilles de papier recyclé ou des feuilles de papier ordinaire?",
+    "res": ["Feuilles de papier recyclé", "Feuilles de papier ordinaire"],
+    "points": [256, 0],
+    "type": "Enfant - Action",
+    "info": "Les feuilles de papier recyclé utilisent moins de ressources naturelles et contribuent à réduire la déforestation par rapport aux feuilles de papier ordinaire."
+  },
+  {
+    "question": "Préfères-tu avoir une pelouse naturelle dans ton jardin ou une pelouse synthétique?",
+    "res": ["Pelouse naturelle", "Pelouse synthétique"],
+    "points": [256, 0],
+    "type": "Enfant - Environement",
+    "info": "Une pelouse naturelle favorise la biodiversité et absorbe le dioxyde de carbone, contribuant ainsi à un jardin plus écologique par rapport à une pelouse synthétique."
+  },
+  {
+    "question": "Lorsque tu as des déchets, préfères-tu les jeter dans une poubelle de recyclage ou une poubelle ordinaire?",
+    "res": ["Poubelle de recyclage", "Poubelle ordinaire"],
+    "points": [1024, 0],
+    "type": "Enfant - Tri",
+    "info": "Jeter les déchets dans une poubelle de recyclage contribue au recyclage des matériaux, réduisant ainsi la quantité de déchets envoyés aux décharges."
+  },
+  {
+    "question": "Lorsque tu choisis un moyen de chauffage pour ton domicile, quels critères écologiques sont prioritaires pour toi?",
+    "res": [
+      "Chauffage électrique",
+      "Chauffage au gaz naturel",
+      "Poêle à bois",
+      "Chauffage au fioul"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "environnement",
+    "info": "Le chauffage électrique est une option écologique, surtout s'il provient de sources d'énergie renouvelable. Le chauffage au gaz naturel est également moins émetteur de CO2 que le fioul. Les poêles à bois peuvent être durables s'ils utilisent du bois provenant de sources renouvelables."
+  },
+  {
+    "question": "Lorsque tu planifies un voyage, quels critères environnementaux sont les plus importants pour toi?",
+    "res": [
+      "Transport en train",
+      "Vol court-courrier",
+      "Voiture individuelle",
+      "Vol long-courrier"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "transports",
+    "info": "Le transport en train est généralement plus écologique que les vols, surtout pour des distances courtes. Les vols long-courrier ont une empreinte carbone plus importante. La voiture individuelle peut être une option plus durable si elle est partagée ou utilise une énergie propre."
+  },
+  {
+    "question": "Quand tu fais des courses, quels critères environnementaux influencent tes choix alimentaires?",
+    "res": [
+      "Produits biologiques",
+      "Produits locaux",
+      "Viande végétalienne",
+      "Produits emballés sans plastique"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "environnement",
+    "info": "Les produits biologiques et locaux ont généralement une empreinte écologique plus faible. Opter pour des alternatives végétaliennes à la viande et choisir des produits emballés sans plastique contribuent à une alimentation plus durable."
+  },
+
+  {
+    "question": "Lorsque tu choisis un mode de transport quotidien, quels critères environnementaux sont les plus importants pour toi?",
+    "res": ["Vélo", "Covoiturage", "Voiture essence", "Transport en commun"],
+    "points": [1024, 768, 256, 512],
+    "type": "transports",
+    "info": "Le vélo et le covoiturage sont des options très écologiques, tandis que la voiture essence génère plus d'émissions. Le transport en commun est également favorable en réduisant le nombre de véhicules sur la route."
+  },
+  {
+    "question": "Lorsque tu fais des achats, quels critères environnementaux influencent le plus ta décision?",
+    "res": [
+      "Produits locaux",
+      "Emballage recyclable",
+      "Marques éco-responsables",
+      "Produits importés"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "achats",
+    "info": "Privilégier les produits locaux, avec un emballage recyclable et provenant de marques éco-responsables, contribue à réduire l'empreinte écologique de vos achats. Les produits importés peuvent impliquer un transport plus long, augmentant les émissions de gaz à effet de serre."
+  },
+  {
+    "question": "Comment préfères-tu contribuer à des actions environnementales?",
+    "res": [
+      "Participer à des projets de reboisement",
+      "Soutenir des ONG environnementales",
+      "Réduire ta consommation de plastique",
+      "Utiliser des produits biodégradables"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "actions",
+    "info": "Participer à des projets de reboisement et soutenir des ONG environnementales ont un impact direct sur la préservation de l'environnement. Réduire la consommation de plastique et utiliser des produits biodégradables contribuent également à la réduction des déchets et à la protection de la planète."
+  },
+
+  {
+    "question": "Lorsque tu choisis un moyen de chauffage pour ton domicile, quels critères écologiques sont prioritaires pour toi?",
+    "res": [
+      "Chauffage électrique",
+      "Chauffage au gaz naturel",
+      "Poêle à bois",
+      "Chauffage au fioul"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "environnement",
+    "info": "Le chauffage électrique est une option écologique, surtout s'il provient de sources d'énergie renouvelable. Le chauffage au gaz naturel est également moins émetteur de CO2 que le fioul. Les poêles à bois peuvent être durables s'ils utilisent du bois provenant de sources renouvelables."
+  },
+  {
+    "question": "Lorsque tu planifies un voyage, quels critères environnementaux sont les plus importants pour toi?",
+    "res": [
+      "Transport en train",
+      "Vol court-courrier",
+      "Voiture individuelle",
+      "Vol long-courrier"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "transports",
+    "info": "Le transport en train est généralement plus écologique que les vols, surtout pour des distances courtes. Les vols long-courrier ont une empreinte carbone plus importante. La voiture individuelle peut être une option plus durable si elle est partagée ou utilise une énergie propre."
+  },
+  {
+    "question": "Quand tu fais des courses, quels critères environnementaux influencent tes choix alimentaires?",
+    "res": [
+      "Produits biologiques",
+      "Produits locaux",
+      "Viande végétalienne",
+      "Produits emballés sans plastique"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "environnement",
+    "info": "Les produits biologiques et locaux ont généralement une empreinte écologique plus faible. Opter pour des alternatives végétaliennes à la viande et choisir des produits emballés sans plastique contribuent à une alimentation plus durable."
+  },
+
+  {
+    "question": "Lorsque tu choisis un mode de transport quotidien, quels critères écologiques sont les plus importants pour toi?",
+    "res": [
+      "Vélo",
+      "Covoiturage",
+      "Voiture individuelle essence",
+      "Transport en commun"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "transports",
+    "info": "Le vélo et le covoiturage sont des options très écologiques, tandis que la voiture individuelle essence génère plus d'émissions. Le transport en commun est également favorable en réduisant le nombre de véhicules sur la route."
+  },
+  {
+    "question": "Lorsque tu fais des achats, quels critères environnementaux influencent le plus ta décision?",
+    "res": [
+      "Produits locaux",
+      "Emballage recyclable",
+      "Marques éco-responsables",
+      "Produits importés"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "achats",
+    "info": "Privilégier les produits locaux, avec un emballage recyclable et provenant de marques éco-responsables, contribue à réduire l'empreinte écologique de vos achats. Les produits importés peuvent impliquer un transport plus long, augmentant les émissions de gaz à effet de serre."
+  },
+  {
+    "question": "Comment préfères-tu contribuer à des actions environnementales?",
+    "res": [
+      "Participer à des projets de reboisement",
+      "Soutenir des ONG environnementales",
+      "Réduire ta consommation de plastique",
+      "Utiliser des produits biodégradables"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "actions",
+    "info": "Participer à des projets de reboisement et soutenir des ONG environnementales ont un impact direct sur la préservation de l'environnement. Réduire la consommation de plastique et utiliser des produits biodégradables contribuent également à la réduction des déchets et à la protection de la planète."
+  },
+  {
+    "question": "Quand tu choisis un moyen de transport, quel critère écologique privilégies-tu le plus?",
+    "res": [
+      "Voiture électrique",
+      "Transport en commun",
+      "Voiture essence",
+      "Avion"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "transports",
+    "info": "La voiture électrique est la meilleure option, car elle a des émissions réduites par rapport aux autres moyens de transport. Le transport en commun est également favorable en réduisant le nombre de véhicules sur la route."
+  },
+  {
+    "question": "Lorsque tu votes, quels aspects environnementaux sont les plus importants pour toi?",
+    "res": [
+      "Politiques en faveur des énergies renouvelables",
+      "Politiques anti-pollution",
+      "Politiques de conservation de la biodiversité",
+      "Politiques de gestion des déchets"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "politiques",
+    "info": "Les politiques en faveur des énergies renouvelables sont cruciales pour lutter contre le changement climatique. Les politiques anti-pollution, de conservation de la biodiversité et de gestion des déchets contribuent également à la protection de l'environnement."
+  },
+  {
+    "question": "Dans le contexte économique actuel, quels secteurs privilégies-tu pour investir en raison de leur impact environnemental?",
+    "res": [
+      "Énergies renouvelables",
+      "Technologies vertes",
+      "Industrie lourde",
+      "Pétrole et gaz"
+    ],
+    "points": [1024, 768, 256, 512],
+    "type": "économie",
+    "info": "Investir dans les énergies renouvelables et les technologies vertes contribue positivement à l'environnement. Éviter l'industrie lourde, le pétrole et le gaz réduit l'empreinte carbone des investissements."
+  }
+]
