@@ -5,12 +5,11 @@ import { fileURLToPath, URL } from "node:url";
 import { resolve } from "path";
 
 export default defineConfig(async ({ command, mode }) => {
-  console.log(resolve(__dirname, "..", "../out/static/"))
   return {
     build: {
       outDir: resolve(__dirname, "../out/static/"),
       emptyOutDir: true,
-      manifest: true,
+      manifest: false,
 
       minify: "esbuild",
       target: "esnext",
@@ -68,7 +67,7 @@ export default defineConfig(async ({ command, mode }) => {
       VitePWA({
         minify: true,
         mode: mode as "production" | "development",
-        injectRegister: "inline",
+        injectRegister: "script-defer",
         registerType: "autoUpdate",
         useCredentials: true,
 
