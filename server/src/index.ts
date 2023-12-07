@@ -1,13 +1,12 @@
 import express from "express";
-import helmet  from 'helmet';
-import jwt from 'jsonwebtoken';
-import { rateLimit} from 'express-rate-limit';
-import {join} from "path";
+import helmet from "helmet";
+import jwt from "jsonwebtoken";
+import { rateLimit } from "express-rate-limit";
+import { join } from "path";
 
-const compression = require('compression')
-const sanitizer = require('express-sanitizer');
-require('dotenv').config();
-
+const compression = require("compression");
+const sanitizer = require("express-sanitizer");
+require("dotenv").config();
 
 const app = express();
 const limiter = rateLimit({
@@ -19,15 +18,16 @@ app.use(express.json());
 app.use(limiter);
 app.use(helmet());
 app.use(sanitizer());
-app.use(compression())
+app.use(compression());
 
-app.disable('x-powered-by');
+app.disable("x-powered-by");
 
-app.get('/api', (req, res) => {
-  res.json({ message: "Hello"})
-}); 
+app.use(express.static(join(__dirname, "static/"), { index: "index.html" }));
 
-app.use('/', express.static(join(__dirname, "static/"), {index: "index.html"}));
+app.get("/api", (req, res) => {
+  res.json({
+    message: jwt.sign({}, process.env.TOKEN_PRIVATE_KEY as jwt.Secret),
+  });
+});
 
-
-app.listen(5000);
+app.listen(process.env.PORT || 80);

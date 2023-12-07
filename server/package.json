@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm i && node index.js",
-    "build": "npx tsc && xcopy .\\.env ..\\out\\.env /Y && xcopy .\\package.json ..\\out\\package.json /Y",
+    "build": "npx tsc && xcopy .\\.env ..\\out\\.env /Y",
     "dev": "nodemon ./src/index.ts"
   },
   "keywords": [],
