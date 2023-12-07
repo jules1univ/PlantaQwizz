@@ -1,9 +1,13 @@
-import { Button } from "@chakra-ui/react";
+import { Suspense, lazy } from "react";
+
+const Topbar = lazy(() => import("@components/Topbar"));
 
 const Home = () => {
   return (
     <>
-      <Button colorScheme="blue">Click me !</Button>
+      <Suspense>
+        <Topbar />
+      </Suspense>
     </>
   );
 };
